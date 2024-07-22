@@ -3,11 +3,6 @@ from settings import *
 from support import import_folder
 pygame.init()
 
-import pygame
-from settings import *
-from support import import_folder
-pygame.init()
-
 class Player(pygame.sprite.Sprite):
     def __init__(self, pos, surface, change_health):
         super().__init__()
