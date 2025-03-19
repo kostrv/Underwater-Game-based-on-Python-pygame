@@ -1,4 +1,11 @@
-import pygame, sys
+import os
+try: 
+    import pygame
+except ModuleNotFoundError: 
+    os.system('pip install pygame')	
+    import pygame
+    
+import sys
 from settings import *
 from level import Level
 from overworld import Overworld
